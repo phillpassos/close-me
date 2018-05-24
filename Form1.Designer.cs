@@ -39,6 +39,7 @@
             this.btnFechar.TabIndex = 0;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.UseWaitCursor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             this.btnFechar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnFechar_KeyPress);
             // 
@@ -48,8 +49,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(161, 76);
             this.Controls.Add(this.btnFechar);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Close me";
+            this.UseWaitCursor = true;
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Form1_KeyPress);
             this.ResumeLayout(false);
